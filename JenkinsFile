@@ -1,0 +1,20 @@
+pipeline {
+   agent any
+  stages {
+    stage ('Tool initialize') {
+          steps {
+            echo "Tool initial is done!"
+                }
+    }            
+    stage ("Source code checkout") {
+             steps {
+               echo "Source code checkout done"
+                }
+    }
+    stage ("Build") {
+             steps {
+               echo "Build is done"
+                   }
+    }
+}
+}
